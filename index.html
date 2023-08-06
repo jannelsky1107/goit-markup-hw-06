@@ -72,72 +72,6 @@
           </button>
         </div>
       </section>
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button class="modal-close" type="button" data-modal-close>
-            <svg class="close-icon" width="8px" height="8px">
-              <use href="./images/icons.svg#close-button"></use>
-            </svg>
-          </button>
-
-          <!-- form -->
-          <form class="form">
-            <fieldset class="form-set">
-              <div>
-                <legend class="form-title">
-                  Leave your contacts and we will call you back
-                </legend>
-              </div>
-
-              <label class="form-label">
-                Name
-                <svg class="form-logo" width="18px" height="18px">
-                  <use href="./images/icons.svg#username-logo"></use>
-                </svg>
-                <input
-                  class="field-text username"
-                  type="text"
-                  name="username"
-                />
-              </label>
-              <label class="form-label">
-                Phone
-                <svg class="form-logo" width="18px" height="18px">
-                  <use href="./images/icons.svg#phone-logo"></use>
-                </svg>
-                <input class="field-text" type="tel" name="phone-number" />
-              </label>
-              <label class="form-label">
-                Email
-                <svg class="form-logo" width="18px" height="18px">
-                  <use href="./images/icons.svg#mail-logo"></use>
-                </svg>
-                <input class="field-text" type="email" name="email" />
-              </label>
-
-              <label class="form-label">
-                Comment
-                <textarea
-                  rows="4"
-                  cols="50"
-                  class="field-comment"
-                  placeholder="Text input"
-                ></textarea>
-              </label>
-              <div class="field-checkbox">
-                <input class="checkbox" type="checkbox" name="policy" />
-                <label
-                  >I accept the terms and conditions of the
-                  <a href=""><u>Privacy Policy</u></a></label
-                >
-              </div>
-              <div class="button-sender">
-                <button class="button submit" type="submit">Send</button>
-              </div>
-            </fieldset>
-          </form>
-        </div>
-      </div>
 
       <!-- Advantages -->
 
@@ -630,26 +564,93 @@
             </ul>
           </div>
           <div class="footer-block">
-            <b class="subscribe-heading">Subscribe</b>
-            <form class="subscribe">
-              <label class="subscribe-field">
-                <input
-                  class="e-mail"
-                  name="email address"
-                  type="text"
-                  placeholder="E-mail"
-                />
-                <button class="subscribe button" type="button">
-                  Subscribe<svg class="send" width="24px" height="36px">
-                    <use href="./images/icons.svg#send-button"></use>
-                  </svg>
-                </button>
-              </label>
+            <b class="footer-heading">Subscribe</b>
+            <form name="footer-studio" class="footer-form">
+              <input
+                class="form-input"
+                name="user-email"
+                type="email"
+                placeholder="E-mail"
+              />
+              <button class="subscribe button" type="submit">
+                Subscribe<svg class="send" width="24px" height="24px">
+                  <use href="./images/icons.svg#send-button"></use>
+                </svg>
+              </button>
             </form>
           </div>
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close>
+          <svg class="close-icon" width="8px" height="8px">
+            <use href="./images/icons.svg#close-button"></use>
+          </svg>
+        </button>
+
+        <!-- form -->
+
+        <h2 class="section-title form-title">
+          Leave your contacts and we will call you back
+        </h2>
+        <form name="hero-button" class="form-hero">
+          <!-- Name -->
+          <label class="form-field">
+            <span class="form-label">Name</span>
+            <input class="form-input" type="text" name="user-name" />
+            <svg class="icon" width="18px" height="18px">
+              <use href="./images/icons.svg#username-logo"></use>
+            </svg>
+          </label>
+          <!-- Phone -->
+          <label class="form-field">
+            <span class="form-label">Phone</span>
+            <input class="form-input" type="tel" name="user-phone" />
+            <svg class="icon" width="18px" height="18px">
+              <use href="./images/icons.svg#phone-logo"></use>
+            </svg>
+          </label>
+          <!-- Email -->
+          <label class="form-field">
+            <span class="form-label">Email</span>
+            <input class="form-input" type="email" name="user-email" />
+            <svg class="icon" width="18px" height="18px">
+              <use href="./images/icons.svg#mail-logo"></use>
+            </svg>
+          </label>
+          <!-- Comment -->
+          <label class="form-field">
+            <span class="form-label">Comment</span>
+            <textarea
+              rows="8"
+              name="feedback"
+              class="form-textarea"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+
+          <label class="agree-check">
+            <input class="checkmark" type="checkbox" name="agreement" />
+            <svg
+              class="check-icon"
+              width="16px"
+              height="16px"
+              aria-hidden="true"
+            >
+              <use href="./images/icons.svg#checkbox-logo"></use>
+            </svg>
+            <span class="form-label">
+              I accept the terms and conditions of the
+              <a href="">Privacy Policy</a></span
+            >
+          </label>
+          <button class="button submit" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
 
     <script src="./js/modal.js"></script>
   </body>
